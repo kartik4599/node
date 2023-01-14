@@ -48,6 +48,28 @@
         </ul>
       </nav>
     </header>
+    <style>
+      .body {
+        padding: 0;
+        margin: 0;
+      }
+      .header {
+        background: black;
+        padding: 10px;
+        margin-bottom: 10px;
+      }
+
+      .header ul {
+        display: flex;
+        justify-content: space-around;
+      }
+
+      .header a {
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+      }
+    </style>
     <main>
       <form action="/verify" method="POST" onsubmit="onSubmit()">
         <lable> Username: </lable>
