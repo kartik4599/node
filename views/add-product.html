@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Add Product</title>
+    <style>
+      .body {
+        padding: 0;
+        margin: 0;
+      }
+      .header {
+        background: black;
+        padding: 10px;
+        margin-bottom: 10px;
+      }
+
+      .header ul {
+        display: flex;
+        justify-content: space-around;
+      }
+
+      .header a {
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+      }
+
+      .form {
+        margin: 10px 20px;
+      }
+
+      .form input {
+        width: 50%;
+        margin: 0px 20px;
+        padding: 10px;
+        border-radius: 10px;
+      }
+
+      .form button {
+        border: none;
+        background: lightblue;
+        border-radius: 5px;
+        padding: 10px 40px;
+        font-size: 14px;
+        color: white;
+        margin: 10px 0px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header class="header">
+      <nav>
+        <ul>
+          <li><a href="/">Shop</a></li>
+          <li><a href="/add-product">Add Product</a></li>
+          <li><a href="/contactus">Contact Us</a></li>
+          <li><a href="/login">Log IN</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <form class="form" action="/add-product" method="POST">
+        <label>Add Product : </label>
+        <input type="text" name="title" /><br/>
+        <button type="submit">Add Product</button>
+      </form>
+    </main>
+  </body>
+</html>
